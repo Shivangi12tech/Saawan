@@ -3,8 +3,147 @@ body{
 }
 
 #navbar{
-    position: fixed;
+    position: sticky;
     display: flex;
-    background-color: azure;
+    background-color: rgb(222, 240, 240);
     width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    height: 54px;
+    top: 0;
+    z-index: 10;
 }
+
+svg{
+    height: 30px;
+}
+
+.navbar-div{
+
+}
+#search{
+    width: 50%;
+}
+#logo{
+    width: 10%;
+}
+#left{
+    width: 15%;
+    display: flex;
+    justify-content: space-evenly;
+}
+#right{
+    width: 20%;
+    display: flex;
+    justify-content: space-evenly;
+}
+#search-bar{
+    height: 30px;
+    background: white;
+    border-radius: 15px;
+    cursor: text;
+    width: 80%;
+    text-align: center;
+    padding-top: 8px;
+}
+main{
+    display: flex;
+    height: 100vh;
+}
+
+aside{
+   width: 20%; 
+   padding-left: 20px;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+}
+#main-container{
+    width: 80%;
+}
+.aside-list{
+    list-style: none;
+    padding: 0;
+}
+.aside-list li{
+    margin-bottom: 10px;
+}
+.playlist{
+    background: none;
+    border: 1px solid green;
+    color: green;
+    height: 32px;
+    width: 120px;
+    border-radius: 15px;
+    cursor: pointer;
+}
+#row-1{
+    display: flex;
+    justify-content: space-between;
+}
+.music-card{
+    width: 13%;
+      position: relative;
+}
+.music-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.overlay:hover{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 150px;
+    width: 150px;
+    background-color: black;
+    opacity: 0.4;
+}
+footer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 110px;
+    background-color: lightgray;
+    position: sticky;
+    margin-top: 100px;
+    bottom: 0;
+
+}
+footer img{
+    height: 64px;
+    width: 64px;
+}
+#music-logo{
+width: 15%;
+}
+#main-controls{
+width: 60%;
+height: 80%;
+display: flex;
+justify-content: center;
+align-items: center;
+font-size: 1.5rem;
+color: rgb(78, 73, 73);
+}
+#inner-controls{
+    width: 40%;
+    height: 50px;
+    display: flex;
+justify-content: space-around;
+align-items: center;
+}
+#side-controls{
+width: 15%;
+height: 80%;
+display: flex;
+justify-content: space-around;
+align-items: center;
+font-size: 1.2rem;
+
+}
+
+
